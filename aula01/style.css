@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap");
+
+:root {
+  --background: #272935;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6071a4;
+  --cyan: #8be8fd;
+  --green: #52fa7c;
+  --orange: #ffb86b;
+  --pink: #ff7ac6;
+  --purple: hsl(265, 89%, 78%);
+  --red: #ff5757;
+  --yellow: #f1fa89;
+
+  --cursive: "Hubballi", cursive;
+  --monospace: "IBM Plex Mono", monospace;
+}
+
+html {
+  background: var(--background);
+  font-family: var(--monospace);
+}
+
+body {
+  min-height: 400px;
+  background-size: 80vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 340px;
+  background: var(--current-line);
+  width: 100%;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 4px;
+  font-family: var(--monospace);
+  box-shadow: 2px 2px 10px rgba(112, 112, 112, 0.451);
+}
+
+.container-input {
+  display: grid;
+  flex-direction: column;
+  justify-items: end;
+  justify-content: space-evenly;
+}
+
+.container-input input {
+  border-radius: 4px;
+  border-style: none;
+  height: 25px;
+}
+
+.container-input input::placeholder {
+  padding-left: 0.3em;
+}
+
+.container-input input:focus {
+  outline: none !important;
+  border-color: var(--orange);
+  box-shadow: 0 0 10px var(--orange);
+}
+
+#btn {
+  width: 90%;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+
+  background: var(--green);
+  transition: 0.2s;
+}
+#btn:focus {
+  outline: none !important;
+}
+
+#btn:hover {
+  background: var(--green);
+  opacity: 0.7;
+}
+.container-input p {
+  color: var(--foreground);
+}
+
+#res {
+  color: var(--foreground);
+  font-size: 1.1rem;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #d3d3d3;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  font: 1.1em var(--cursive);
+  font-style: italic;
+  color: var(--foreground);
+  margin-top: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> Imersão Dev Alura - Aula 01</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Calculadora de média</h1>
+    <p class="page-subtitle">
+      Descubra qual a sua média de nota de todas as provas!
+    </p>
+    <!-- <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""> -->
+    <section>
+      <div class="container-input">
+        <p class="input">Primeira nota: <input type="number" id="primeiranota" class="form" placeholder="Primeira nota"></p>
+        <p class="input">Segunda nota: <input type="number" id="segundanota" class="form" placeholder="Segunda nota"></p>
+        <p class="input">Terceira nota: <input type="number" id="terceiranota" class="form" placeholder="Terceira nota"></p>
+        <p class="input">Quarta nota: <input type="number" id="quartanota" class="form" placeholder="Quarta nota"></p>
+
+      </div>
+
+      <input type="button" value="Calcular" id="btn" onclick="Calcular()">
+
+      <div id="res">
+        <p>Digite suas notas acima para descobrir sua média</p>
+      </div>
+    </section>
+  </div>
+
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <script src="script.js"></script>
+</body>
+
+</html>
