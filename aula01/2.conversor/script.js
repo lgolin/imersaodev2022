@@ -10,13 +10,13 @@ function Converter() {
   } else {
     if (temp[0].checked) {
       let conv = ((num * 9) / 5 + 32).toFixed(1);
-      res.innerHTML = `O ${num}°C convertido para Fahrenheit é ${conv}`;
+      res.innerHTML = `${num}°C = ${conv}°F`;
     }
 
     if (temp[1].checked) {
       let conv = (((num - 32) * 5) / 9).toFixed(1);
 
-      res.innerHTML = `O ${num}°F convertido para Celsius é ${conv}`;
+      res.innerHTML = `${num}°F = ${conv}°C`;
     }
   }
 }
