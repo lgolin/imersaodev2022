@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> Imersão Dev Alura - Aula 01</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de Temperaturas</h1>
+    <p class="page-subtitle">
+      Escolha uma moeda para fazer a conversão da medida.
+    </p>
+
+    <!-- Entrada de dados -->
+    <div id="temp">
+      <h3>Digite uma temperatura: <input type="num" id="num"></h3><br>
+      <h3>Você deseja converter para Celsius ou Fahrenheit?</h3>
+      <input type="radio" id="cel" name="temp" value="Celsius" checked>
+      <label for="cel">Celsius °C</label>
+      <input type="radio" id="fah" name="temp" value="Fahrenheit">
+      <label for="fah">Fahrenheit °F</label><br><br>
+      <input type="button" value="Converter" onclick="Converter()" class="button-converter"><br><br>
+    </div>
+
+    <!-- Saida de dados -->
+    <div id="res">Preencha os dados acima para ver o resultado.</div>
+  </div>
+
+  </a>
+  <script src="script.js"></script>
+</body>
+
+</html>
